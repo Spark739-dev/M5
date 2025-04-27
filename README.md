@@ -9,10 +9,18 @@ Write a C program to convert a 23.65 into 25 using pointer
 4.	Print the modified value.
 
 ## PROGRAM:
+      #include <stdio.h>
+      int main(){
+         double num=23.65;
+         double *ptr=&num;
+         *ptr=25.0;
+         printf("Modified value : %1.2f",num);
+    }
 
 ## OUTPUT:
  	
 
+![image](https://github.com/user-attachments/assets/5df84566-5669-409c-a1a0-61ca8d2c7fd8)
 
 
 
@@ -45,8 +53,25 @@ Write a C program to calculate the Product of first 12 natural numbers using Rec
 6.	Print the result, indicating it is the product of the first 12 natural numbers.
 
 ## PROGRAM:
+     #include <stdio.h>
+     unsigned long long calculateproduct(int n) {
+         if(n==1) {
+         return 1;
+       }
+         else{
+         return n*calculateproduct(n-1);
+       }
+    }
+    int main() {
+       int n=12;
+       unsigned long long product;
+       product=calculateproduct(n);
+       printf("The product of first 12 naturl numbers = %d",product);
+       return 0;
+    }
 ## OUTPUT:
-         		
+![image](https://github.com/user-attachments/assets/a6cfe39e-a22f-4f1c-90f9-dc68c7c6bfa5)
+        		
 ## RESULT:
 
 Thus the program has been executed successfully.
@@ -68,18 +93,39 @@ Write C Program to find Sum of each row of a Matrix
 4.	Print the sum for each row.
 
 ## PROGRAM:
-
+     #include <stdio.h>
+     int main() {
+     int row,col;
+     int i,j;
+     scanf("%d %d",&row,&col);
+     int a[row][col];
+     for(i=0;i<row;i++) {
+          for(j=0;j<col;j++) {
+              scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<row;i++) {
+          int sum=0;
+          for(j=0;j<col;j++) {
+              sum+=a[i][j];
+          }
+          printf("Sum of rows %d = %d\n",i+1,sum);
+     }
+      
+    }
 
 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/dd8014f8-520c-41ea-b1f8-56a344c0c31a)
 
  
  
 
  ## RESULT
  
-
+Thus the C program to String process executed successfully
+ 
 
 # EX-24-STRINGS
 
@@ -96,9 +142,30 @@ Write C program for the below pyramid string pattern. Enter a string: PROGRAM En
 5.	End the program.
 
 ## PROGRAM:
-
+     #include <stdio.h>
+     #include <string.h>
+     int main(){
+        char str[100];
+        int nums_row,i,j,k,index=0;
+        scanf("%s",str);
+        scanf("%d",&nums_row);
+        int len=strlen(str);
+        int midpoint=nums_row-1;
+        for(i=0;i<nums_row;i++) {
+             for(j=0;j<nums_row;j++) {
+                printf(" ");
+        }
+             for(k=0;k<=i;k++) {
+                printf("%c ",str[index % len]);
+                index++;
+        }
+         printf("\n");
+      }
+       return 0;
+    }
 
  ## OUTPUT
+![image](https://github.com/user-attachments/assets/9c0e8404-3875-430d-bcb5-9f65304a95d9)
 
  
 
@@ -132,8 +199,25 @@ Step 5: Loop from i = 0 to i < n:
 Step 6: End the program.
 
 ## PROGRAM
-
+     #include <stdio.h>
+     int main() {
+       int i,n;
+       int arr[10];
+       int *ptr=arr;
+       scanf("%d",&n);
+       for(i=0;i<n;i++) {
+           scanf("%d",ptr+i);
+     }
+     printf("The elements are:\n");
+     for(i=0;i<n;i++){
+          printf("%d ",*(ptr+i));
+      }
+      printf("\n");
+      return 0;
+    }
+    
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/7a37847f-ef32-4349-9e1e-3d20686cb7f4)
 
  
 
