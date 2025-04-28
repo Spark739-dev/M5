@@ -19,8 +19,9 @@ Write a C program to convert a 23.65 into 25 using pointer
 
 ## OUTPUT:
  	
+![21](https://github.com/user-attachments/assets/b64d887f-cbeb-47d4-808a-794008067706)
 
-![image](https://github.com/user-attachments/assets/5df84566-5669-409c-a1a0-61ca8d2c7fd8)
+
 
 
 
@@ -70,7 +71,8 @@ Write a C program to calculate the Product of first 12 natural numbers using Rec
        return 0;
     }
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/a6cfe39e-a22f-4f1c-90f9-dc68c7c6bfa5)
+![22](https://github.com/user-attachments/assets/0b0954cd-fba5-4740-aba5-88cd217d3450)
+
         		
 ## RESULT:
 
@@ -117,7 +119,8 @@ Write C Program to find Sum of each row of a Matrix
 
 ## OUTPUT
 
-![image](https://github.com/user-attachments/assets/dd8014f8-520c-41ea-b1f8-56a344c0c31a)
+![23](https://github.com/user-attachments/assets/382dfc73-67d7-4449-bca1-ac108b4788e1)
+
 
  
  
@@ -165,7 +168,8 @@ Write C program for the below pyramid string pattern. Enter a string: PROGRAM En
     }
 
  ## OUTPUT
-![image](https://github.com/user-attachments/assets/9c0e8404-3875-430d-bcb5-9f65304a95d9)
+
+![24](https://github.com/user-attachments/assets/ab4d1956-4399-4a12-9d9a-279688c4a996)
 
  
 
@@ -217,7 +221,8 @@ Step 6: End the program.
     }
     
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/7a37847f-ef32-4349-9e1e-3d20686cb7f4)
+
+![25](https://github.com/user-attachments/assets/f4d4f2ed-c8f0-48e2-94e7-1a27eb3cdbdd)
 
  
 
